@@ -1,4 +1,4 @@
 # LXEB
 
 - Revision 1 is incorrect for n >= 2
-- Revision 2 is incorrect for n >= 4
+- Revision 2 seems correct!
