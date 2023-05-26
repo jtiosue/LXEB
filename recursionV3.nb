@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     95983,       2545]
-NotebookOptionsPosition[     88419,       2404]
-NotebookOutlinePosition[     88756,       2419]
-CellTagsIndexPosition[     88713,       2416]
+NotebookDataLength[     95592,       2535]
+NotebookOptionsPosition[     88157,       2397]
+NotebookOutlinePosition[     88494,       2412]
+CellTagsIndexPosition[     88451,       2409]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2374,13 +2374,11 @@ Rows correspond to {n, {0,0,0}}. Columns correspond to powers of k.\
   3.893950194651568*^9}},ExpressionUUID->"2689e141-d9b5-4723-8d02-\
 7d6973f45953"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"Export", "[", "\[IndentingNewLine]", 
   RowBox[{
-  "\"\</Users/jtiosue/Documents/Wolfram Mathematica/LXEB/nLessThan10.csv\>\"",
-    ",", "\[IndentingNewLine]", 
+  "\"\</Users/jtiosue/Documents/Repositories/LXEB/nLessThan10.csv\>\"", ",", 
+   "\[IndentingNewLine]", 
    RowBox[{"Table", "[", 
     RowBox[{
      RowBox[{"computeG", "[", 
@@ -2391,14 +2389,9 @@ Cell[BoxData[
       RowBox[{"n", ",", "10"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
   "]"}]], "Input",
  CellChangeTimes->{{3.8939502140402822`*^9, 3.893950296500587*^9}, {
-  3.893950802271111*^9, 3.893950817612694*^9}},
- CellLabel->"In[55]:=",ExpressionUUID->"3ac6d981-2ba7-4fc6-984e-77ce85e83753"],
-
-Cell[BoxData["\<\"/Users/jtiosue/Documents/Wolfram \
-Mathematica/LXEB/nLessThan10.csv\"\>"], "Output",
- CellChangeTimes->{3.893950654940468*^9, 3.8939508508854227`*^9},
- CellLabel->"Out[55]=",ExpressionUUID->"06b79548-603c-4b42-bf87-3df54b0da051"]
-}, Open  ]]
+  3.893950802271111*^9, 3.893950817612694*^9}, {3.894119409095763*^9, 
+  3.8941194135627003`*^9}},ExpressionUUID->"3ac6d981-2ba7-4fc6-984e-\
+77ce85e83753"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -2541,10 +2534,7 @@ Cell[86831, 2355, 157, 2, 34, "Output",ExpressionUUID->"39015e7d-8122-4872-bb2a-
 Cell[CellGroupData[{
 Cell[87049, 2364, 162, 3, 67, "Section",ExpressionUUID->"903e5e79-a4f9-43c7-999b-d34605dd4c93"],
 Cell[87214, 2369, 217, 5, 35, "Text",ExpressionUUID->"2689e141-d9b5-4723-8d02-7d6973f45953"],
-Cell[CellGroupData[{
-Cell[87456, 2378, 673, 16, 94, "Input",ExpressionUUID->"3ac6d981-2ba7-4fc6-984e-77ce85e83753"],
-Cell[88132, 2396, 247, 3, 34, "Output",ExpressionUUID->"06b79548-603c-4b42-bf87-3df54b0da051"]
-}, Open  ]]
+Cell[87434, 2376, 695, 17, 94, "Input",ExpressionUUID->"3ac6d981-2ba7-4fc6-984e-77ce85e83753"]
 }, Open  ]]
 }, Open  ]]
 }
