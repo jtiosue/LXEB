@@ -9,5 +9,5 @@ The WithIO folder builds off of revision 3.
 - recursionIO.nb: Everytime you run the computeG function, it appends new computed values to the computedG.csv file. Everytime you restart the notebook, it loads the precomputed values from the computedG.csv file.
 - playingAround.nb: Here we just load all of the data from computedG.csv so we can more easily play around with it.
 
-The Julia folder is the same as the WithIO folder except that it is written in Julia instead of Mathematica. It seems to be considerably faster, HOWEVER AT THE MOMENT IT DOES NOT MATCH THE RESYLTS OF THE MATHEMATICA CODE. I haven't figured out why this is yet.
+The Julia folder is the same as the WithIO folder except that it is written in Julia instead of Mathematica. It seems to be considerably faster, even though I don't have Julia locally installed and so was doing it on cocalc.com. We can easily get to large values of n with Julia, and even larger values with a Julia on a cluster.
 
