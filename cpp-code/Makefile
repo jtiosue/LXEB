@@ -11,7 +11,11 @@ clean:
 	rm lexb
 
 compile:
-	g++ *.cpp -std=c++17 -o lexb
+	g++ lexb.cpp methods.cpp -std=c++17 -o lexb
 
 run:
 	./lexb $(n) $(k)
+
+
+approx:
+	g++ avg-fourth-moment.cpp methods.cpp -std=c++17 -o avg-fourth-moment && echo "" && ./avg-fourth-moment && rm avg-fourth-moment
