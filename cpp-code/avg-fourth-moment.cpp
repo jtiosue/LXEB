@@ -54,8 +54,8 @@ int main(int argc, char** argv) {
     ituple mean_var;
     int iters = 1e5;
     for(int n=1; n<=5; n++) {
-        if(n == 4) {iters = 2500;}
-        else if(n>4) {iters = 150;}
+        if(n == 4) {iters = 3000;}
+        else if(n>4) {iters = 1000;}
         for(int k=1; k<=5; k++) {
             std::cout << n << "," << k << std::endl;
             mean_var = fourth_moment_approx_mean_std(n, k, iters);
