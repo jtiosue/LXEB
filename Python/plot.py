@@ -8,10 +8,12 @@ COLORS = list(mcolors.TABLEAU_COLORS.keys())
 
 numerical_data = {}
 ns = set()
-with open("../Cpp/fourth_moment_approx_mean_std.csv") as f:
+# with open("../Cpp/fourth_moment_approx_mean_std.csv") as f:
+with open("numerical_approx_fourth_moment.csv") as f:
     for row in csv.DictReader(f, delimiter=','):
     	numerical_data[(int(row['n']), int(row['k']))] = (
-    		int(row['iters']), float(row['mean']), float(row['std'])
+    		# int(row['iters']), float(row['mean']), float(row['std'])
+    		int(row['iters']), float(row['avg'])
     	)
     	ns.add(int(row['n']))
 

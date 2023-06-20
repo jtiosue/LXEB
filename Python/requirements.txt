@@ -1,0 +1,4 @@
+numpy
+thewalrus
+matplotlib
+scipy
