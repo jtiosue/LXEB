@@ -15,7 +15,7 @@ The Mathematica folder builds off of Old/recursionV3.nb.
 
 ## Julia folder
 
-The Julia folder is the same as the Mathematica folder except that it is written in Julia instead of Mathematica. It seems to be considerably faster, even though I don't have Julia locally installed and so was doing it on cocalc.com. We can easily get to large values of n with Julia, and even larger values with a Julia on a cluster.
+The Julia folder is the same as the Mathematica folder except that it is written in Julia instead of Mathematica. It is to be _considerably_ faster.
 
 ## Cpp folder
 
