@@ -233,7 +233,7 @@ end
 
 
 for n=1:30
-    println("Starting n =", n)
+    println("Starting n = ", n)
     l = computeG(n, [0, 0, 0]);
 end
 
