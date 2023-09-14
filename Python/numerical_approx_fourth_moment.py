@@ -1,7 +1,7 @@
 import numpy as np
 from thewalrus import hafnian as haf
 
-iters = 10000
+iters = 100000
 ns = range(1, 10)
 ks = range(1, 10)
 
