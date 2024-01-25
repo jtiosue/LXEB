@@ -1,27 +1,37 @@
 # LXEB
 
-## Old folder 
-
-- Revision 1 is incorrect for n >= 2
-- Revision 2 seems correct.
-- Revision 3 is the same as revision 2, but instead of working symbolically with k, we work with coefficient arrays representing the coefficients in front of certain degrees of k. This dramatically speeds the code up. It write the results to the CSV file.
+*TO DO*: add description with link to paper.
 
 
-## Mathematica folder
+#### Recursion folder
 
-The Mathematica folder builds off of Old/recursionV3.nb.
-- recursionIO.nb: Everytime you run the computeG function, it appends new computed values to the computedG.csv file. Everytime you restart the notebook, it loads the precomputed values from the computedG.csv file.
-- playingAround.nb: Here we just load all of the data from computedG.csv so we can more easily play around with it.
+The `Recursion` folder contains the subfolders `MathematicaRecursion` and `JuliaRecursion`. `MathematicaRecursion` contains Mathematica files (these can also be opened and run with WolframScript, which is a free alternative to Mathematica). The `recursion.nb` file performs the recursion to exactly compute the values of g(n, 0, 0, 0). It loads the precomputed values from `computedG.csv`, and as it computes more values, it appends the resulting values to `computedG.csv`.
 
-## Julia folder
+The `JuliaRecursion` folder performs the same recursion as is performed in the `MathematicaRecursion` folder. However, it is written in Julia and so is _much much_ faster. The code is however mostly uncommented. But it is a direct translation of the Mathematica code, and the Mathematica code _is_ heavily commented. Hence, if you want to understand the code, we recommend reading the Mathematica code; if you want to run the code, we recommend running the Julia code.
 
-The Julia folder is the same as the Mathematica folder except that it is written in Julia instead of Mathematica. It is to be _considerably_ faster.
+We emphasize that in both the Mathematica and Julia code, polynomials in k (e.g. a + b k + c k^2) are represented as arrays ({a, b, c}). Multiplying and adding polynomials is then done via functions on the array representations. Using this representation _dramatically_ speeds up the code in comparison to e.g. working with k symbolically in Mathematica.
 
-## Cpp folder
 
-The Cpp folder contains some code to check some of Adam's older formulas. It also contains code to generate a bunch of random Gaussian matrices and estimate the average and standard deviation of the fourth moment.
+#### Analysis folder
 
-## Python folder
+*TO DO*: describe this section better.
 
-For plotting some stuff.
+In the `sanityChecks.nb` file, we load the computed values of g from `Recursion/JuliaRecursion/computedG.csv` and perform of the sanity checks described in the paper on it.
+
+In the `plot-fits.nb` file, we load the computed values of g from `Recursion/JuliaRecursion/computedG.csv` and make some plots.
+
+
+#### NumericalApprox folder
+
+The `NumericalApprox` folder contains the code to (a) generate numerical estimates of the fourth moment of the Hafnian (second moment in GBS probabilities) (`numerical_approx_fourth_moment.py`), and to (b) plot those estimates on top of the analytical results we find in the `Recursion` folder.
+
+
+## IMPORTANT!
+
+I ran the Julia code `Recursion/JuliaRecursion/recursion.jl` up to n=40. Unfortunately, `Recursion/JuliaRecursion/computedG.csv` is very large now (about 198 MB), and `git push` is freezing so I can't upload the full file to GitHub. 
+
+The current `Recursion/JuliaRecursion/computedG.csv` file on GitHub goes only to n=9. The file that contains up to n=40 is on [Google Drive](https://drive.google.com/drive/folders/1sCdtR_jjV6ohsK2928Ki3WuEgbaKxJkt?usp=share_link). 
+
+The easiest way to play around with the expressions is to clone the repo, download the `computedG.csv` file from Drive and replace the `Recursion/JuliaRecursion/computedG.csv` file with it, then run `Analysis/sanityChecks.nb`.
+
 
